@@ -1,0 +1,146 @@
+.formWrap form {
+    display: grid;
+    min-width: 360px;
+    width: 30vw;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 1vw;
+}
+
+.formWrap form a{
+    text-decoration: none;
+}
+
+.formHeader {
+    padding-left: 1.56vw;
+    margin-bottom: 1.56vw;
+}
+
+.formHeader h2 {
+    font-size: 2.34vw;
+    text-align: start;
+    margin: 1.56vw 0 0.78vw;
+}
+
+.formHeader p {
+    font-size: 1vw;
+    text-align: start;
+    margin: 0;
+}
+
+.formHeader a {
+    color: #1a6dcd;
+    margin-left: 0.5vw;
+}
+
+
+.name, .email, .phone, .lang {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    padding: 0 1.56vw;
+    font-size: 1vw;
+
+
+}
+
+
+.controls input {
+    height: 3.65vw;
+    font-size: 1vw;
+    padding-left: 0.78vw;
+    border-radius: 0.26vw;
+    border: 1px solid gray;
+    box-shadow: 0 1px 3px 0 rgba(50, 50, 50, 0.75);
+}
+.controls input:focus {
+
+    outline: none;
+    box-shadow:0 0 0 2px #1a6dcd;
+}
+
+
+.controls input::placeholder {
+
+    color: gray;
+}
+
+.controls span {
+    display: block;
+    height: 2.08vw;
+    text-align: start;
+    font-size: 0.78vw;
+    padding-top: 0.26vw;
+    color: red;
+}
+
+.formWrap label {
+    justify-self: start;
+    height: 1.56vw;
+}
+
+.conditions {
+    padding: 0 1.56vw;
+    font-size: 1.04vw;
+
+}
+
+.conditions p {
+    padding-top: 0.16vw;
+    padding-left: 3vw;
+}
+
+.conditions p a {
+    color: #1a6dcd;
+}
+
+.customCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.customCheckbox + label::before {
+    float:left;
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    font-family: FontAwesome;
+    font-size: 1.82vw;
+    cursor: pointer;
+}
+
+.customCheckbox:checked + label::before {
+    float:left;
+    border-color: #0b76ef;
+    content: "\f00c";
+    color: #0b76ef;
+    cursor: pointer;
+}
+.submit {
+    display: grid;
+}
+.submit button {
+    margin: 0 1.04vw 2.08vw 1.04vw;
+    justify-self: stretch;
+    width: auto;
+    height: 3.65vw;
+    border-radius: 0.26vw;
+    background-color: #1a6dcd;
+    border: none;
+    font-size: 1.04vw;
+    color: white;
+    cursor: pointer;
+}
+
+.submit button:focus {
+
+    outline: none;
+}
+.submit button:disabled {
+
+    background-color: #dbe2ea;
+    color: gray;
+}
